@@ -19,7 +19,7 @@ searchInput.addEventListener('change', (e) => {
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${e.target.value}&appid=${APIID}&units=metric&lang=vi`)
         .then(async (res) => {
             const data = await res.json();
-            console.log(data);
+            // console.log(data);
             cityName.innerHTML = data.name || DEFAULT_VALUE;
             weatherState.innerHTML = data.weather[0].description || DEFAULT_VALUE;
             weatherIcon.setAttribute('src', `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
@@ -31,4 +31,11 @@ searchInput.addEventListener('change', (e) => {
             searchInput.value = ''
         });
 })
+
+
+
+
+
+
+
 

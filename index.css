@@ -36,6 +36,7 @@
 }
 
 .search-input{
+    
     background: transparent;
     border: none;
     outline : none;
@@ -44,6 +45,10 @@
 
 .search-input::placeholder{
     color: rgb(238, 238, 238);
+}
+
+.microphone{
+    cursor: pointer;
 }
 
 
